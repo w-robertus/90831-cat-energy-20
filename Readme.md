@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Василий Робертус](https://up.htmlacademy.ru/adaptive/20/user/90831).
-* Наставник: `Дмитрий Иовлев`.
+* Наставник:[Дмитрий Иовлев](https://htmlacademy.ru/profile/skywalker).
 
 ---
 
