@@ -14,9 +14,9 @@
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active"><a href="index.html">главная</a></li>
-              <li class="site-list__item site-list__item--active"><a href="catalog.html">каталог продукции</a></li>
-              <li class="site-list__item site-list__item--active"><a href="form.html">подбор программы</a></li>
+              <li class="site-list__item"><a href="index.html">главная</a></li>
+              <li class="site-list__item"><a href="catalog.html">каталог продукции</a></li>
+              <li class="site-list__item site-list__item--active"><a>подбор программы</a></li>
             </ul>
           </div>
       </nav>
@@ -43,8 +43,7 @@
 
 
      <form action="/echo" method="post">
-           <section class="cat">
-              <h2 class="cat__header"></h2>
+           <fieldset class="cat">
               <label for="cat-name" class="contact__lbl">ИМЯ:*<br>
               <input type="text" id="cat-name" class="contact__input" name="mail" placeholder="Барсик">
               </label>
@@ -56,10 +55,9 @@
               <label for="cat-tel" class="contact__lbl">Возраст (лет):<br>
               <input type="text" id="client-tel" class="contact__input" name="tel" placeholder="7">
               </label>
-          </section>
+          </fieldset>
 
-          <section class="select-programm">
-            <fieldset class="filter-fieldset">
+          <fieldset class="select-programm">
                 <ul  class="filter-list">
                     <li><input id="categorie-1" type=radio value="Похудение" name="categorie" checked>
                         <label for="categorie-1">Похудение</label></li>
@@ -68,10 +66,9 @@
                     <li><input id="categorie-3" type=radio value="Не знаю (Нужен ваш совет)" name="categorie">
                         <label for="categorie-3">Не знаю (Нужен ваш совет)</label></li>
                 </ul>
-              </fieldset>
-          </section>
+          </fieldset>
 
-          <section class="contact">
+          <fieldset class="contact">
               <h2 class="contact__header">Контактные данные (владельца кота)</h2>
               <label for="client-mail" class="contact__lbl">E-mail:*<br>
               <input type="text" id="client-mail" class="contact__input" name="mail" placeholder="kuklachev@gmail.com">
@@ -80,15 +77,15 @@
               <label for="client-tel" class="contact__lbl">Телефон:*<br>
               <input type="text" id="client-tel" class="contact__input" name="tel" placeholder="8 (960) 900-60-90">
               </label>
-          </section>
+          </fieldset>
 
-          <section class="comment">
+          <fieldset class="comment">
             <h2 class="comment__header"></h2>
             <textarea  class="comment__field" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </section>
+          </fieldset>
 
 
-           <section class="extra">
+           <fieldset class="extra">
             <div class="extra__wrapper">
               <h2 class="extra__header">Дополнительно</h2>
               <fieldset class="filter-fieldset">
@@ -105,12 +102,12 @@
                 </ul>
             </fieldset>
             </div>
-          </section>
+          </fieldset>
 
 
 
           <section class="send">
-              <button type="submit" class="send__btn">Отправить заявку</button>
+              <button type="submit" class="send__btn button">Отправить заявку</button>
               <p class="send__remark">* — Обязательные поля</p>
           </section>
       </form>
@@ -141,9 +138,9 @@
 
         <div class="page-footer__social">
           <ul class="social__list">
-            <li class="socail__item"><a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a></li>
-            <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a></li>
-            <li class="social__item"><a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a></li>
+            <li class="socail__item"><a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a></li>
+            <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
+            <li class="social__item"><a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a></li>
           </ul>
         </div>
 
