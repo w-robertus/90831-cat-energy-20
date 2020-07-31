@@ -44,16 +44,16 @@
 
      <form action="/echo" method="post">
            <fieldset class="cat">
-              <label for="cat-name" class="contact__lbl">ИМЯ:*<br>
-              <input type="text" id="cat-name" class="contact__input" name="mail" placeholder="Барсик">
+              <label for="cat-name" class="cat__lbl txt-field-lbl">ИМЯ:*<br>
+              <input type="text" id="cat-name" class="cat__input txt-field" name="mail" placeholder="Барсик">
               </label>
 
-              <label for="cat-weight" class="contact__lbl">Вес (кг):*<br>
-              <input type="text" id="cat-weight" class="contact__input" name="tel" placeholder="7">
+              <label for="cat-weight" class="cat__lbl txt-field-lbl">Вес (кг):*<br>
+              <input type="text" id="cat-weight" class="cat__input txt-field" name="tel" placeholder="7">
               </label>
 
-              <label for="cat-tel" class="contact__lbl">Возраст (лет):<br>
-              <input type="text" id="client-tel" class="contact__input" name="tel" placeholder="7">
+              <label for="cat-tel" class="cat__lbl txt-field-lbl">Возраст (лет):<br>
+              <input type="text" id="cat-tel" class="cat__input txt-field" name="tel" placeholder="7">
               </label>
           </fieldset>
 
@@ -70,46 +70,43 @@
 
           <fieldset class="contact">
               <h2 class="contact__header">Контактные данные (владельца кота)</h2>
-              <label for="client-mail" class="contact__lbl">E-mail:*<br>
-              <input type="text" id="client-mail" class="contact__input" name="mail" placeholder="kuklachev@gmail.com">
+              <label for="client-mail" class="contact__lbl txt-field-lbl">E-mail:*<br>
+              <input type="text" id="client-mail" class="contact__input txt-field" name="mail" placeholder="kuklachev@gmail.com">
               </label>
 
-              <label for="client-tel" class="contact__lbl">Телефон:*<br>
-              <input type="text" id="client-tel" class="contact__input" name="tel" placeholder="8 (960) 900-60-90">
+              <label for="client-tel" class="contact__lbl txt-field-lbl">Телефон:*<br>
+              <input type="text" id="client-tel" class="contact__input txt-field" name="tel" placeholder="8 (960) 900-60-90">
               </label>
           </fieldset>
 
           <fieldset class="comment">
             <h2 class="comment__header"></h2>
-            <textarea  class="comment__field" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea  class="comment__field txt-field" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
 
            <fieldset class="extra">
             <div class="extra__wrapper">
               <h2 class="extra__header">Дополнительно</h2>
-              <fieldset class="filter-fieldset">
-
                 <ul class="filter-list">
                     <li><input id="feature-1" type=checkbox value="сахарозаменитель" checked>
                         <label for="feature-1">сахарозаменитель</label></li>
                     <li><input id="feature-2" type=checkbox value="питьевая вода">
                         <label for="feature-2">питьевая вода</label></li>
-                    <li><input id="feature-3" type=checkbox value="молоко" checked disabled>
+                    <li><input id="feature-3" type=checkbox value="молоко">
                         <label for="feature-3">молоко</label></li>
-                    <li><input id="feature-4" type=checkbox value="витамины" disabled>
+                    <li><input id="feature-4" type=checkbox value="витамины">
                         <label for="feature-4">витамины</label></li>
                 </ul>
-            </fieldset>
             </div>
           </fieldset>
 
 
 
-          <section class="send">
+          <div class="send">
               <button type="submit" class="send__btn button">Отправить заявку</button>
               <p class="send__remark">* — Обязательные поля</p>
-          </section>
+          </div>
       </form>
 
 
@@ -130,24 +127,24 @@
       <section class="location"></section>
     </main>
 
-    <footer class="page-footer">
+      <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <img src="" width="128" height="24" alt="логотип">
         </div>
 
         <div class="page-footer__social">
-          <ul class="social__list">
-            <li class="socail__item"><a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a></li>
-            <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
-            <li class="social__item"><a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a></li>
+          <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link  social-list__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a></li>
+            <li class="social-list__item"><a class="social-list__link  social-list__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
+            <li class="social-list__item"><a class="social-list__link  social-list__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a></li>
           </ul>
         </div>
 
         <div class="page-footer__copyright">
-          <ul class="copyright__list">
-            <li class="copyright__item--txt">HTML Academy</li>
-            <li class="copyright__item--logo">HTML Academy</li>
+          <ul class="copyright-list">
+            <li class="copyright-list__item copyright-list__item--txt">HTML Academy</li>
+            <li class="copyright-list__item copyright-list__item--logo">HTML Academy</li>
           </ul>
         </div>
       </div>
