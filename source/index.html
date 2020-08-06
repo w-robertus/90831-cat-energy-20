@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <img src="img/logo-mobile.svg" width="34" height="38" alt="кэт энерджи">
+      <img src="img/logo-mobile.svg" class="page-header__logo-img" width="34" height="38" alt="кэт энерджи">
     </a>
 
     <nav class="main-nav">
@@ -23,9 +25,9 @@
   </header>
 
   <main class="page-main">
-    <section class="promo">
+    <section class="promo promo--index">
       <div class="promo__wrapper">
-        <h1 class="promo__header">Функциональное питание для котов</h1>
+        <h1 class="promo__header">Функциональное <br>питание для котов</h1>
         <p class="promo__txt">Занялся собой? Займись котом!</p>
         <a href="" class="promo__link button">Подобрать программу</a>
       </div>
@@ -74,29 +76,28 @@
         <h2 class="before-after__header">Живой пример</h2>
         <p class="before-after__txt">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <div class="before-after__metrica">
-          <div class="before-after__metrica-item bordered">
+          <div class="before-after__metrica-item">
             <p class="before-after__metrica-txt">Снижение веса</p>
             <p class="before-after__metrica-digit">5 КГ</p>
           </div>
 
-          <div class="before-after__metrica-item bordered">
+          <div class="before-after__metrica-item">
             <p class="before-after__metrica-txt">Затрачено времени</p>
             <p class="before-after__metrica-digit">60 ДНЕЙ</p>
           </div>
 
-          <div class="before-after__metrica-item">
-            <p class="before-after__metrica-txt">Затраты на питание: </p>
-            <p class="before-after__metrica-digit">15 000 РУБ. </p>
+          <div class="before-after__metrica-price">
+            Затраты на питание 15 000 РУБ.
           </div>
         </div>
 
         <div class="before-after__slider">
           <ul class="before-after__slider-list slider-list">
             <li class="before-after__slider-list-item slider-list__item">
-              <img src="https://via.placeholder.com/150x150" alt="полный">
+              <img src="img/before-mobile@1x.png" alt="фото кота до">
             </li>
             <li class="before-after__slider-list-item slider-list__item">
-              <img src="https://via.placeholder.com/150x150" alt="стройный">
+              <img src="img/after-mobile@1x.png" alt="фото кота после">
             </li>
 
           </ul>
@@ -110,12 +111,13 @@
 
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h2 class="contacts__header">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="contacts__txt">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <h2 class="contacts__header">Приглашаем <br>к сотрудничеству <br>дилеров!</h2>
+        <p class="contacts__txt">ул. Большая <br>Конюшенная, д. 19/8 <br>Санкт-Петербург</p>
       </div>
+      <div class="contacts__location"></div>
     </section>
 
-    <section class="location"></section>
+
   </main>
 
   <footer class="page-footer">

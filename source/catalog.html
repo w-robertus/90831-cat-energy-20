@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
     <a href="index.html" class="page-header__logo">
-      <img src="img/logo-mobile.svg" width="34" height="38" alt="кэт энерджи">
+      <img src="img/logo-mobile.svg" class="page-header__logo-img"  width="34" height="38" alt="кэт энерджи">
     </a>
 
     <nav class="main-nav">
@@ -39,7 +41,7 @@
     <section class="cards">
       <div class="cards__wrapper">
         <div class="card">
-          <a href=""><img src="https://via.placeholder.com/140x112" alt="фото"></a>
+          <a href=""><img src="img/chicken-small-mobile@1x.jpg" alt="фото"></a>
           <div class="card__info">
             <a href=""><p class="card__name">Cat Energy PRO 500 г</p></a>
             <ul class="card__description card__list">
@@ -52,7 +54,7 @@
         </div>
 
         <div class="card">
-          <a href=""><img src="https://via.placeholder.com/140x112" alt="фото"></a>
+          <a href=""><img src="img/chicken-big-mobile@1x.jpg" alt="фото"></a>
           <div class="card__info">
             <a href=""><p class="card__name">Cat Energy PRO 1000 г</p></a>
             <ul class="card__description card__list">
@@ -65,7 +67,7 @@
         </div>
 
         <div class="card">
-          <a href=""><img src="https://via.placeholder.com/140x112" alt="фото"></a>
+          <a href=""><img src="img/fish-small-mobile@1x.jpg" alt="фото"></a>
           <div class="card__info">
             <a href=""><p class="card__name">Cat Energy PRO 500 г</p></a>
             <ul class="card__description card__list">
@@ -78,7 +80,7 @@
         </div>
 
         <div class="card">
-          <a href=""><img src="https://via.placeholder.com/140x112" alt="фото"></a>
+          <a href=""><img src="img/fish-big-mobile@1x.jpg" alt="фото"></a>
           <div class="card__info">
             <a href=""><p class="card__name">Cat Energy PRO 1000 г</p></a>
             <ul class="card__description card__list">
@@ -91,7 +93,7 @@
         </div>
 
         <div class="card">
-          <a href=""><img src="https://via.placeholder.com/140x112" alt="фото"></a>
+          <a href=""><img src="img/buckwheat-small-mobile@1x.jpg" alt="фото"></a>
           <div class="card__info">
             <a href=""><p class="card__name">Cat Energy slim 500 г</p></a>
             <ul class="card__description card__list">
@@ -104,7 +106,7 @@
         </div>
 
         <div class="card">
-          <a href=""><img src="https://via.placeholder.com/140x112" alt="фото"></a>
+          <a href=""><img src="img/buckwheat-big-mobile@1x.jpg" alt="фото"></a>
           <div class="card__info">
             <a href=""><p class="card__name">Cat Energy slim 1000 г</p></a>
             <ul class="card__description card__list">
@@ -117,7 +119,7 @@
         </div>
 
         <div class="card">
-          <a href=""><img src="https://via.placeholder.com/140x112" alt="фото"></a>
+          <a href=""><img src="img/rice-small-mobile@1x.jpg" alt="фото"></a>
           <div class="card__info">
             <a href=""><p class="card__name">Cat Energy slim 500 г</p></a>
             <ul class="card__description card__list">
@@ -138,7 +140,7 @@
               <li class="card__description-item"></li>
             </ul>
           </div>
-          <div class="card__btn button">Показать все</div>
+          <a class="card__btn button button--grey">Показать все</a>
         </div>
 
       </div>
@@ -187,9 +189,8 @@
           </li>
         </ul>
 
-        <div class="gift">
-          <img src="https://via.placeholder.com/150x150" class="gift__ico" alt="подарок">
-          <p class="gift__txt">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="addition__gift">
+          <p class="addition__gift-txt">Закажите все и получите чехол для кота в подарок!</p>
         </div>
       </div>
     </section>
@@ -199,13 +200,12 @@
 
 
     <section class="contacts">
-      <div class="contacts__wrapper">
-        <h2 class="contacts__header">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="contacts__txt">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__wrapper contacts__wrapper--bg">
+        <h2 class="contacts__header">Приглашаем <br>к сотрудничеству <br>дилеров!</h2>
+        <p class="contacts__txt">ул. Большая <br>Конюшенная, д. 19/8 <br>Санкт-Петербург</p>
       </div>
+      <div class="contacts__location"></div>
     </section>
-
-    <section class="location"></section>
   </main>
 
   <footer class="page-footer">
