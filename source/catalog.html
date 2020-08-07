@@ -4,7 +4,16 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <style type="text/css">
+    @font-face {
+      font-family: "Oswald";
+      src: url("../fonts/oswaldregular.woff2") format("woff2"),
+            url("../fonts/oswaldregular.woff") format("woff");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
 </head>
 <body>
   <header class="page-header">
@@ -32,7 +41,7 @@
 
     <section class="promo">
       <div class="promo__wrapper">
-        <h1 class="promo__header">Каталог продукции</h1>
+        <h1 class="promo__header h1">Каталог продукции</h1>
         <p class="promo__txt"></p>
       </div>
     </section>
@@ -148,7 +157,7 @@
 
     <section class="addition">
       <div class="addition__wrapper">
-        <h2 class="addition__header">Дополнительные товары</h2>
+        <h2 class="addition__header h2">Дополнительные товары</h2>
 
         <ul class="addition__cards">
 
@@ -201,7 +210,7 @@
 
     <section class="contacts">
       <div class="contacts__wrapper contacts__wrapper--bg">
-        <h2 class="contacts__header">Приглашаем <br>к сотрудничеству <br>дилеров!</h2>
+        <h2 class="contacts__header h2">Приглашаем <br>к сотрудничеству <br>дилеров!</h2>
         <p class="contacts__txt">ул. Большая <br>Конюшенная, д. 19/8 <br>Санкт-Петербург</p>
       </div>
       <div class="contacts__location"></div>
