@@ -1,0 +1,24 @@
+.promo--index {
+  min-height: 480px;
+  background: url("../img/index-can-mobile@1x.png") 50% 100% no-repeat,
+    url("../img/index-background-mobile@1x.jpg") 50% 0% no-repeat;
+}
+
+.promo__txt {
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet) {
+  .promo--index {
+    min-height: 870px;
+    background: url("../img/index-can-tablet@1x.jpg") 50% 100% no-repeat;
+  }
+}
+
+@media (min-width: @desktop) {
+  .promo--index {
+    min-height: 700px;
+    background: url("../img/index-can-desktop@1x.png") 30% center no-repeat,
+      url("../img/index-background-desktop@1x.jpg") 100% 0% no-repeat;
+  }
+}

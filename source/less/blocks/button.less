@@ -1,0 +1,33 @@
+.button {
+  font: 14px/18px @oswald;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  width: 280px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: @basic_green;
+
+  &:hover {
+    background-color: @basic_green-2;
+  }
+
+  &:active {
+    color: fadeout(white, 30%);
+  }
+}
+
+.button--grey {
+  color: @special_dark-grey;
+  background-color: @basic_grey;
+
+  &:hover {
+    background-color: @basic_grey-2;
+  }
+
+  &:active {
+    color: fadeout(@special_dark-grey, 30%);
+  }
+}
