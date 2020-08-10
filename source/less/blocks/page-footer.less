@@ -22,12 +22,15 @@
   border-bottom: #d9d9d9 1px solid;
 }
 
-.social-list {
+.page-footer__social-list {
   display: flex;
+  list-style: none;
 }
 
-.copyright-list {
+.page-footer__copyright-list {
   display: flex;
+  list-style: none;
+  justify-content: space-between;
 }
 
 @media (min-width: @tablet) {
@@ -35,6 +38,8 @@
     padding: 30px;
     padding-top: 55px;
     padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .page-footer__social {
