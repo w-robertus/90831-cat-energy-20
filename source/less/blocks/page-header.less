@@ -1,3 +1,9 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .page-header__logo {
   &:hover {
     opacity: 0.8;
@@ -14,6 +20,11 @@
 }
 
 @media (min-width: @tablet) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .page-header__logo-img {
     width: 174px;
     height: 51px;

@@ -1,17 +1,39 @@
 .promo--index {
-  min-height: 480px;
+
+  color: white;
+  text-align: center;
   background: url("../img/index-can-mobile@1x.png") 50% 100% no-repeat,
     url("../img/index-background-mobile@1x.jpg") 50% 0% no-repeat;
+  background-size: 280px 270px, cover;
+
+  .promo__wrapper {
+    padding-top: 27px;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+
+    .promo__link {
+      margin-top: 50%;
+      align-self: center;
+    }
+  }
 }
 
 .promo__txt {
   text-transform: uppercase;
+  font: normal 14px/18px @oswald;
 }
+
 
 @media (min-width: @tablet) {
   .promo--index {
+    color: black;
     min-height: 870px;
     background: url("../img/index-can-tablet@1x.jpg") 50% 100% no-repeat;
+  }
+
+  .promo__txt {
+    font: normal 20px/20px @oswald;
   }
 }
 

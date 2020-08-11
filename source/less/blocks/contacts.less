@@ -1,11 +1,23 @@
 .contacts__wrapper {
-  display: flex;
   padding: 20px;
   padding-top: 28px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacts__wrapper--bg {
   background: @basic_grey;
+}
+
+.contacts__header {
+  font-size: 16px;
+  line-height: 18px;
+  color: #111111;
+}
+
+.contacts__txt {
+  color: @special_dark-grey;
+  line-height: 20px;
 }
 
 .contacts__location {
@@ -22,8 +34,15 @@
     padding-bottom: 50px;
   }
 
+  .contacts__header {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
   .contacts__txt {
     text-align: right;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .contacts__location {

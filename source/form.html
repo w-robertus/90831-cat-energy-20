@@ -28,27 +28,27 @@
     <section class="promo">
       <div class="promo__wrapper">
         <h1 class="promo__header h1">Подбор программы</h1>
-        <p class="promo__txt">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="promo__txt">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
       </div>
     </section>
 
 
     <form action="https://echo.htmlacademy.ru" method="post" class="form">
-      <fieldset class="form__fieldset">
-        <label for="cat-name" class="form__label">ИМЯ:*<br>
+      <fieldset class="form__cat-info form__fieldset">
+        <label for="cat-name" class="form__label">ИМЯ:*
           <input type="text" id="cat-name" class="form__input" name="mail" placeholder="Барсик">
         </label>
 
-        <label for="cat-weight" class="form__label">Вес (кг):*<br>
+        <label for="cat-weight" class="form__label">Вес (кг):*
           <input type="text" id="cat-weight" class="form__input" name="tel" placeholder="7">
         </label>
 
-        <label for="cat-tel" class="form__label">Возраст (лет):<br>
+        <label for="cat-tel" class="form__label">Возраст (лет):
           <input type="text" id="cat-tel" class="form__input" name="tel" placeholder="7">
         </label>
       </fieldset>
 
-      <fieldset class="form__fieldset">
+      <fieldset class="form__select-programm form__fieldset">
         <ul>
           <li><input id="categorie-1" class="visually-hidden" type=radio value="Похудение" name="categorie" checked>
             <label for="categorie-1" class="form__radio-label">Похудение</label></li>
@@ -59,26 +59,26 @@
         </ul>
       </fieldset>
 
-      <fieldset class="form__fieldset">
+      <fieldset class="form__cat-owner form__fieldset">
         <legend class="form__header">Контактные данные (владельца кота)</legend>
-        <label for="client-mail" class="form__label">E-mail:*<br>
+        <label for="client-mail" class="form__label">E-mail:*
           <input type="text" id="client-mail" class="form__input" name="mail" placeholder="kuklachev@gmail.com">
         </label>
 
-        <label for="client-tel" class="form__label">Телефон:*<br>
+        <label for="client-tel" class="form__label">Телефон:*
           <input type="text" id="client-tel" class="form__input" name="tel" placeholder="8 (960) 900-60-90">
         </label>
       </fieldset>
 
-      <fieldset class="comment form__fieldset">
-        <legend class="comment__header"></legend>
-        <textarea  class="comment__field txt-field" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <fieldset class="form__comment form__fieldset">
+        <legend class="form__header">Комментарий</legend>
+        <textarea  class="form__comment-field form__input" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
 
-      <fieldset class="extra form__fieldset">
-        <div class="extra__wrapper">
-          <legend class="extra__header">Дополнительно</legend>
+      <fieldset class="form__extra form__fieldset">
+        <div class="form__extra-wrapper">
+          <legend class="form__header">Дополнительно</legend>
           <ul>
             <li><input id="feature-1" type=checkbox value="сахарозаменитель" checked>
               <label for="feature-1" class="form__label">сахарозаменитель</label></li>
@@ -93,9 +93,9 @@
       </fieldset>
 
 
-      <div class="send">
-        <button type="submit" class="send__btn button">Отправить заявку</button>
-        <p class="send__remark">* — Обязательные поля</p>
+      <div class="form__send">
+        <button type="submit" class="form__send-btn button">Отправить заявку</button>
+        <p class="form__send-remark">* — Обязательные поля</p>
       </div>
     </form>
 
@@ -113,21 +113,35 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-        <img src="https://via.placeholder.com/150x150" width="128" height="24" alt="логотип">
+        <img src="img/logo-footer.svg" width="128" height="24" alt="логотип">
       </div>
 
       <div class="page-footer__social">
-        <ul class="social-list">
-          <li class="social-list__item"><a class="social-list__link  social-list__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a></li>
-          <li class="social-list__item"><a class="social-list__link  social-list__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
-          <li class="social-list__item"><a class="social-list__link  social-list__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a></li>
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link  page-footer__social-link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
+          </li>
+
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link  page-footer__social-link--facebook" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
+          </li>
+
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link  page-footer__social-link--instagram" href="https://www.instagram.com/htmlacademy">
+              <span class="visually-hidden">Мы в Инстаграме</span>
+            </a>
+          </li>
         </ul>
       </div>
 
       <div class="page-footer__copyright">
-        <ul class="copyright-list">
-          <li class="copyright-list__item copyright-list__item--txt">HTML Academy</li>
-          <li class="copyright-list__item copyright-list__item--logo">HTML Academy</li>
+        <ul class="page-footer__copyright-list">
+          <li class="page-footer__copyright-item page-footer__copyright-item--txt">HTML Academy</li>
+          <li class="page-footer__copyright-item page-footer__copyright-item--logo">HTML Academy</li>
         </ul>
       </div>
     </div>
