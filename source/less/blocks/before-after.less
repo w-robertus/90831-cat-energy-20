@@ -1,5 +1,5 @@
 .before-after {
-  background: @special_grey;
+  background: #eaeaea;
 }
 
 .before-after__wrapper {
@@ -15,16 +15,24 @@
 .before-after__metrica-item {
   height: 64px;
   width: 124px;
-  border: 1px solid #eaeaea;
+  border: 1px solid @special_grey;
   border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 .before-after__metrica-txt {
+  padding: 0 15px;
+  width: 60px;
+  text-transform: lowercase;
   font: 12px/12px @arial;
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  background: #eaeaea;
 }
 
 .before-after__metrica-digit {
@@ -45,6 +53,21 @@
 
   .before-after__wrapper {
     padding: 30px;
+  }
+
+  .before-after__metrica-item {
+    width: 162px;
+    height: 77px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .before-after__metrica-txt {
+    background: white;
+    width: auto;
+    bottom: -5px;
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 

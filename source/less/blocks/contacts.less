@@ -13,6 +13,7 @@
   font-size: 16px;
   line-height: 18px;
   color: #111111;
+  text-transform: uppercase;
 }
 
 .contacts__txt {
@@ -31,7 +32,7 @@
   .contacts__wrapper {
     padding: 70px;
     padding-top: 65px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
 
   .contacts__header {
@@ -54,11 +55,29 @@
 }
 
 @media (min-width: @desktop) {
+  .contacts {
+    position: relative;
+  }
+
   .contacts__wrapper--bg {
     background: none;
   }
 
+  .contacts__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background: white;
+    padding: 0;
+    height: 200px;
+    width: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .contacts__txt {
+    margin-left: 90px;
     text-align: left;
   }
 
