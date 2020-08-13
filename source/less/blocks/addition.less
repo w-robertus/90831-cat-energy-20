@@ -1,3 +1,14 @@
+.addition__header {
+  width: 100%;
+  font-size: 24px;
+  line-height: 24px;
+  padding-top: 28px;
+  margin: 0;
+  padding-bottom: 35px;
+  display: inline-block;
+  // border-bottom: 1px solid @special_grey;
+}
+
 .addition__gift {
   margin-bottom: 40px;
   margin-top: 40px;
@@ -10,17 +21,39 @@
   background-size: 78px 80px, cover;
 }
 
+.addition__cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.addition__card {
+  padding-bottom: 15px;
+  border-bottom: 1px solid @special_grey;
+
+  &:first-child {
+    border-top: 1px solid @special_grey;
+  }
+}
+
 .addition__card-title {
+  padding: 13px 0;
+  margin: 0;
   font: normal 16px/16px @oswald;
   color: @special_dark-grey-2;
   text-transform: uppercase;
 }
 
 .addition__card-description {
+  padding-bottom: 15px;
   font: normal 14px/14px @arial;
   color: @special_dark-grey;
   display: flex;
   justify-content: space-between;
+
+  p {
+    margin: 0;
+  }
 }
 
 .addition__gift-txt {
@@ -31,6 +64,13 @@
 }
 
 @media (min-width: @tablet) {
+  .addition__header {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 68px;
+    padding-bottom: 80px;
+  }
+
   .addition__cards {
     border: 1px solid @special_grey;
     border-top: none;
@@ -41,20 +81,22 @@
     border-bottom: 1px solid @special_grey;
     padding-left: 37px;
     padding-right: 37px;
-
-    &:first-child {
-      border-top: 1px solid @special_grey;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   .addition__card-title {
     font-size: 20px;
     line-height: 20px;
+    padding: 27px 0;
   }
 
   .addition__card-description {
     font-size: 16px;
     line-height: 20px;
+    padding: 0;
   }
 
   .addition__card-btn {
@@ -78,11 +120,47 @@
 }
 
 @media (min-width: @desktop) {
+  .addition__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 85px;
+  }
+
+  .addition__header {
+    width: 100%;
+  }
+
   .addition__cards {
     border: none;
+    width: 900px;
+  }
+
+  .addition__card {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .addition__card-title {
+    flex-grow: 1;
+  }
+
+  .addition__card-description {
+    width: 290px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .addition__card-btn {
+    width: 244px;
+    margin-left: 40px;
   }
 
   .addition__gift {
+    margin: 0;
     height: 290px;
     width: 245px;
     flex-direction: column-reverse;

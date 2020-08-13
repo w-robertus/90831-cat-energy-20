@@ -1,8 +1,7 @@
-.page-header {
+.page-header__wrapper {
   display: flex;
   flex-direction: column;
 }
-
 
 .page-header__logo {
   &:hover {
@@ -20,18 +19,33 @@
 }
 
 @media (min-width: @tablet) {
-  .page-header {
+  .page-header__wrapper {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    height: 100px;
   }
 
   .page-header__logo-img {
     width: 174px;
     height: 51px;
   }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop) {
+  .page-header {
+    width: 100%;
+    position: absolute;
+  }
+
+  .page-header__wrapper {
+    height: 160px;
+  }
+
   .page-header__logo-img {
     width: 202px;
     height: 59px;

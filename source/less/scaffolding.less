@@ -1,4 +1,5 @@
 html {
+  height: 100%;
   font: 14px/18px @arial;
   color: black;
 }
@@ -9,6 +10,11 @@ html {
 
 .h2 {
   font: 36px/40px @oswald;
+}
+
+.container {
+  margin: 0 auto;
+  width: 280px;
 }
 
 @media (min-width: @tablet) {
@@ -24,6 +30,10 @@ html {
   .h2 {
     font: 36px/36px @oswald;
   }
+
+  .container {
+    width: 708px;
+  }
 }
 
 @media (min-width: @desktop) {
@@ -31,18 +41,22 @@ html {
     font: 16px/24px @arial;
     color: black;
   }
+
+  .container {
+    width: 1224px;
+  }
 }
 
-body,
-ul,
-p,
-h1,
-h2,
-h3 {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+// body,
+// ul,
+// p,
+// h1,
+// h2,
+// h3 {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
 
 .visually-hidden {
   position: absolute;
