@@ -7,15 +7,15 @@
 .weight__wrapper {
   padding-left: 20px;
   padding-right: 20px;
+  height: 266px;
   background-color: @basic_grey;
 }
 
 .weight__header {
   margin: 0;
-  padding: 30px;
+  padding: 30px 0;
   padding-left: 70px;
   background-repeat: no-repeat;
-  background-position: 0% 50%;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 37px;
@@ -26,12 +26,16 @@
 
   .weight__header {
     background-image: url("../img/weight__minus-ico-mobile.png");
+    background-position: 0% 50%;
   }
 }
 
 .weight__wrapper--plus {
   .weight__header {
     background-image: url("../img/weight__plus-ico-mobile.png");
+    background-position: 0 50%;
+    margin-left: -10px;
+    padding-left: 80px;
   }
 }
 
@@ -57,6 +61,7 @@
   .weight__wrapper {
     padding-left: 50px;
     padding-right: 315px;
+    height: auto;
   }
 
   .weight__wrapper--minus {
@@ -81,6 +86,7 @@
 
     .weight__header {
       background: none;
+      margin: 0;
       padding-left: 0;
       padding-top: 75px;
       padding-bottom: 25px;
@@ -132,8 +138,9 @@
       background-image: url("../img/weight__plus-ico-desktop.png");
       background-position: 0% 50%;
       background-repeat: no-repeat;
-      padding-left: 165px;
+      padding-left: 185px;
       padding-bottom: 75px;
+      margin-left: -20px;
     }
   }
 }

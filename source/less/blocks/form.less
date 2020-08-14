@@ -6,6 +6,8 @@
 .form__header {
   font: normal 24px/26px @oswald;
   background: white;
+  padding-top: 26px;
+  padding-bottom: 32px;
 
   // &::after {
   //   content: "";
@@ -25,9 +27,12 @@
 .form__fieldset {
   border: none;
   margin: 0;
+  padding: 0;
 }
 
 .form__label {
+  justify-content: space-between;
+  display: flex;
   text-transform: uppercase;
   font: normal 16px/18px @oswald;
   color: @special_dark-grey;
@@ -40,6 +45,8 @@
 }
 
 .form__input {
+  padding: 0;
+  box-sizing: border-box;
   border: solid 1px @special_grey;
 
   &::placeholder {
@@ -55,6 +62,14 @@
   display: flex;
   flex-direction: column;
 }
+
+
+.form__extra-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 
 .form__comment-field {
   width: 100%;
@@ -73,10 +88,31 @@
 
   .form__header {
     font: normal 36px/36px @oswald;
+    padding-top: 65px;
+    padding-bottom: 76px;
+  }
+
+  .form__extra-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__extra-list-item:nth-child(odd) {
+    flex-basis: 50%;
   }
 }
 
-// @media (min-width: @desktop) {
+@media (min-width: @desktop) {
+  .form__extra-list {
+    flex-wrap: nowrap;
+  }
 
+  .form__extra-list-item:nth-child(odd) {
+    flex-basis: 330px;
+  }
 
-// }
+  .form__extra-list-item {
+    flex-basis: 330px;
+  }
+}
