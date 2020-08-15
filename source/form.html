@@ -58,29 +58,35 @@
           </fieldset>
         </div>
 
-        <div class="container">
-          <fieldset class="form__select-programm form__fieldset">
-            <ul>
-              <li><input id="categorie-1" class="visually-hidden" type=radio value="Похудение" name="categorie" checked>
-                <label for="categorie-1" class="form__radio-label">Похудение</label></li>
-              <li><input id="categorie-2" class="visually-hidden" type=radio value="Набор массы" name="categorie">
-                <label for="categorie-2" class="form__radio-label">Набор массы</label></li>
-              <li><input id="categorie-3" class="visually-hidden" type=radio value="Не знаю (Нужен ваш совет)" name="categorie">
-                <label for="categorie-3" class="form__radio-label">Не знаю (Нужен ваш совет)</label></li>
-            </ul>
-          </fieldset>
-        </div>
+        <fieldset class="form__select-programm form__fieldset">
+          <div class="container">
+              <ul class="form__select-programm-list">
+                <li><input id="categorie-1" class="visually-hidden" type=radio value="Похудение" name="categorie" checked>
+                  <label for="categorie-1" class="form__radio-label">Похудение</label></li>
+                <li><input id="categorie-2" class="visually-hidden" type=radio value="Набор массы" name="categorie">
+                  <label for="categorie-2" class="form__radio-label">Набор массы</label></li>
+                <li><input id="categorie-3" class="visually-hidden" type=radio value="Не знаю (Нужен ваш совет)" name="categorie">
+                  <label for="categorie-3" class="form__radio-label">Не знаю (Нужен ваш совет)</label></li>
+              </ul>
+          </div>
+        </fieldset>
 
         <div class="container">
           <fieldset class="form__cat-owner form__fieldset">
             <legend class="form__header">Контактные данные (владельца кота)</legend>
-            <label for="client-mail" class="form__label">E-mail:*
-              <input type="text" id="client-mail" class="form__input" name="mail" placeholder="kuklachev@gmail.com">
-            </label>
+            <ul class="form__cat-owner-list">
+              <li class="form__cat-owner-list-item">
+                <label for="client-mail" class="form__label">E-mail:*
+                  <input type="text" id="client-mail" class="form__input" name="mail" placeholder="kuklachev@gmail.com">
+                </label>
+              </li>
 
-            <label for="client-tel" class="form__label">Телефон:*
-              <input type="text" id="client-tel" class="form__input" name="tel" placeholder="8 (960) 900-60-90">
-            </label>
+              <li class="form__cat-owner-list-item">
+                <label for="client-tel" class="form__label">Телефон:*
+                  <input type="text" id="client-tel" class="form__input" name="tel" placeholder="8 (960) 900-60-90">
+                </label>
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset class="form__comment form__fieldset">
@@ -94,13 +100,13 @@
               <legend class="form__header">Дополнительно</legend>
               <ul class="form__extra-list">
                 <li class="form__extra-list-item"><input id="feature-1" type=checkbox value="сахарозаменитель" checked>
-                  <label for="feature-1" class="form__label">сахарозаменитель</label></li>
+                  <label for="feature-1" class="form__check-label">сахарозаменитель</label></li>
                 <li class="form__extra-list-item"><input id="feature-2" type=checkbox value="питьевая вода">
-                  <label for="feature-2" class="form__label">питьевая вода</label></li>
+                  <label for="feature-2" class="form__check-label">питьевая вода</label></li>
                 <li class="form__extra-list-item"><input id="feature-3" type=checkbox value="молоко">
-                  <label for="feature-3" class="form__label">молоко</label></li>
+                  <label for="feature-3" class="form__check-label">молоко</label></li>
                 <li class="form__extra-list-item"><input id="feature-4" type=checkbox value="витамины">
-                  <label for="feature-4" class="form__label">витамины</label></li>
+                  <label for="feature-4" class="form__check-label">витамины</label></li>
               </ul>
             </div>
           </fieldset>
@@ -122,7 +128,9 @@
         </div>
       </div>
 
-      <div class="contacts__location"></div>
+      <div class="contacts__location">
+        <img src="img/bg-location-mobile.jpg" class="contacts__location-map" alt="карта как нас найти">
+      </div>
     </section>
   </main>
 
