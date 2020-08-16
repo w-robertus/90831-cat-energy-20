@@ -1,37 +1,43 @@
 .contacts__wrapper {
-  padding: 20px;
+  padding-bottom: 20px;
   padding-top: 28px;
   display: flex;
   justify-content: space-between;
 }
 
-.contacts__wrapper--bg {
+.contacts--bg {
   background: @basic_grey;
 }
 
 .contacts__header {
+  margin: 0;
   font-size: 16px;
   line-height: 18px;
   color: #111111;
+  text-transform: uppercase;
 }
 
 .contacts__txt {
+  margin: 0;
   color: @special_dark-grey;
   line-height: 20px;
 }
 
 .contacts__location {
-  width: 320px;
-  height: 362px;
-  background: url("../img/bg-location-mobile.jpg") 50% 50% no-repeat;
-  background-size: contain;
+  // height: 362px;
+  // background: url("../img/bg-location-mobile.jpg") 50% 0% no-repeat;
+  // background-size: contain;
+}
+
+.contacts__location-map {
+  display: block;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet) {
   .contacts__wrapper {
-    padding: 70px;
     padding-top: 65px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
 
   .contacts__header {
@@ -46,26 +52,41 @@
   }
 
   .contacts__location {
-    width: 768px;
-    height: 400px;
-    background: url("../img/bg-location-tablet.jpg") 50% 50% no-repeat;
-    background-size: contain;
+    // height: 400px;
+    // background: url("../img/bg-location-tablet.jpg") 50% 0% no-repeat;
+    // background-size: cover;
   }
 }
 
 @media (min-width: @desktop) {
-  .contacts__wrapper--bg {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts--bg {
     background: none;
   }
 
+  .contacts__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background: white;
+    height: 200px;
+    width: 570px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
   .contacts__txt {
+    margin-left: 90px;
     text-align: left;
   }
 
   .contacts__location {
-    width: 1440px;
-    height: 400px;
-    background: url("../img/bg-location-desktop.jpg") 50% 50% no-repeat;
-    background-size: contain;
+    // height: 400px;
+    // background: url("../img/bg-location-desktop.jpg") 50% 0% no-repeat;
+    // background-size: cover;
   }
 }

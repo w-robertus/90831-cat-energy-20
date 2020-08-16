@@ -13,8 +13,8 @@
   }
 
   & a {
-    min-height: 66px;
     width: 100%;
+    min-height: 66px;
     text-transform: uppercase;
     text-decoration: none;
     font: normal 20px/20px @oswald;
@@ -31,7 +31,7 @@
   }
 
   .main-nav__list-item {
-    margin-right: 35px;
+    margin-left: 35px;
     border: none;
 
     &:first-child {
@@ -39,6 +39,7 @@
     }
 
     & a {
+      min-height: auto;
       font-size: 18px;
       line-height: 24px;
     }
@@ -51,5 +52,9 @@
       font-size: 20px;
       line-height: 30px;
     }
+  }
+
+  .main-nav--index a {
+    color: white;
   }
 }
