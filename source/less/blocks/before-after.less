@@ -66,6 +66,19 @@
   text-align: center;
 }
 
+.before-after__slider-list {
+  list-style: none;
+}
+
+.before-after__toggles-btn {
+  background: none;
+  border: none;
+
+  font: normal 16px/20px  @oswald;
+  text-transform: uppercase;
+  color: black;
+}
+
 @media (min-width: @tablet) {
   .before-after {
     background: linear-gradient(180deg, transparent 50%, @special_grey 50%);
@@ -121,6 +134,11 @@
     font-size: 20px;
     line-height: 20px;
     text-align: right;
+  }
+
+  .before-after__toggles-btn {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
