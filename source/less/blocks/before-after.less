@@ -1,9 +1,20 @@
 .before-after {
   background: #eaeaea;
 }
+//
+// .before-after__wrapper {
+//   padding: 20px 0;
+// }
 
-.before-after__wrapper {
-  padding: 20px 0;
+.before-after__header {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 33px;
+}
+
+.before-after__txt {
+  margin: 0;
+  padding-bottom: 25px;
 }
 
 .before-after__metrica {
@@ -15,23 +26,29 @@
 .before-after__metrica-item {
   height: 64px;
   width: 124px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  position: relative;
+
   border: 1px solid @special_grey;
   border-radius: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
 }
 
 .before-after__metrica-txt {
-  padding: 0 15px;
-  width: 60px;
-  text-transform: lowercase;
-  font: 12px/12px @arial;
   display: block;
   position: absolute;
-  bottom: -15px;
+  bottom: -25px;
+
+  width: 60px;
+  padding: 0 15px;
+
+  text-transform: lowercase;
+  text-align: center;
+  font: 12px/12px @arial;
   background: #eaeaea;
 }
 
@@ -41,9 +58,25 @@
 }
 
 .before-after__metrica-price {
+  width: 100%;
+  padding-top: 34px;
+
   font: 14px/20px @oswald;
   text-transform: uppercase;
-  width: 100%;
+  text-align: center;
+}
+
+.before-after__slider-list {
+  list-style: none;
+}
+
+.before-after__toggles-btn {
+  background: none;
+  border: none;
+
+  font: normal 16px/20px  @oswald;
+  text-transform: uppercase;
+  color: black;
 }
 
 @media (min-width: @tablet) {
@@ -51,23 +84,61 @@
     background: linear-gradient(180deg, transparent 50%, @special_grey 50%);
   }
 
-  .before-after__wrapper {
-    padding: 30px 0;
+  // .before-after__wrapper {
+  //   padding: 30px 0;
+  // }
+  .before-after__header {
+    padding-top: 43px;
+    padding-bottom: 63px;
+  }
+
+  .before-after__txt {
+    padding-bottom: 54px;
   }
 
   .before-after__metrica-item {
     width: 162px;
     height: 77px;
+
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .before-after__metrica-digit {
     font-size: 30px;
     line-height: 37px;
   }
 
   .before-after__metrica-txt {
-    background: white;
     width: auto;
-    bottom: -5px;
+    padding: 0 10px;
+
+    bottom: -20px;
+
     font-size: 14px;
     line-height: 14px;
+
+    background: white;
+  }
+
+  .before-after__metrica-price {
+    width: 300px;
+    padding-top: 0;
+    padding-left: 110px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .before-after__toggles-btn {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -76,7 +147,16 @@
     background: linear-gradient(180deg, transparent 50%, @special_grey 50%);
   }
 
-  .before-after__wrapper {
-    padding: 110px 0;
+  // .before-after__wrapper {
+  //   padding: 110px 0;
+  // }
+  .before-after__header {
+    padding-top: 70px;
+    padding-bottom: 75px;
+  }
+
+  .before-after__metrica-price {
+    padding: 0;
+    justify-content: space-between;
   }
 }

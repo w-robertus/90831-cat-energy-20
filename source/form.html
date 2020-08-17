@@ -43,33 +43,45 @@
 
       <form action="https://echo.htmlacademy.ru" method="post" class="form">
         <div class="container">
-          <fieldset class="form__cat-info form__fieldset">
-            <label for="cat-name" class="form__label">ИМЯ:*
-              <input type="text" id="cat-name" class="form__input" name="mail" placeholder="Барсик">
-            </label>
+          <div class="container-column">
+            <div class="container-column__column">
+              <fieldset class="form__cat-info form__fieldset">
+                <label for="cat-name" class="form__label">ИМЯ:*
+                  <input type="text" id="cat-name" class="form__input" name="mail" placeholder="Барсик">
+                </label>
 
-            <label for="cat-weight" class="form__label">Вес (кг):*
-              <input type="text" id="cat-weight" class="form__input" name="tel" placeholder="7">
-            </label>
+                <label for="cat-weight" class="form__label">Вес (кг):*
+                  <input type="text" id="cat-weight" class="form__input" name="tel" placeholder="7">
+                </label>
 
-            <label for="cat-tel" class="form__label">Возраст (лет):
-              <input type="text" id="cat-tel" class="form__input" name="tel" placeholder="7">
-            </label>
-          </fieldset>
-        </div>
+                <label for="cat-tel" class="form__label">Возраст (лет):
+                  <input type="text" id="cat-tel" class="form__input" name="tel" placeholder="7">
+                </label>
+              </fieldset>
+            </div>
 
-        <fieldset class="form__select-programm form__fieldset">
-          <div class="container">
-              <ul class="form__select-programm-list">
-                <li><input id="categorie-1" class="visually-hidden" type=radio value="Похудение" name="categorie" checked>
-                  <label for="categorie-1" class="form__radio-label">Похудение</label></li>
-                <li><input id="categorie-2" class="visually-hidden" type=radio value="Набор массы" name="categorie">
-                  <label for="categorie-2" class="form__radio-label">Набор массы</label></li>
-                <li><input id="categorie-3" class="visually-hidden" type=radio value="Не знаю (Нужен ваш совет)" name="categorie">
-                  <label for="categorie-3" class="form__radio-label">Не знаю (Нужен ваш совет)</label></li>
-              </ul>
+            <div class="container-column__column">
+              <fieldset class="form__select-programm form__fieldset">
+                <ul class="form__select-programm-list">
+                  <li class="form__select-programm-list-item">
+                    <input id="categorie-1" class="visually-hidden" type=radio value="Похудение" name="categorie" checked>
+                    <label for="categorie-1" class="form__radio-label">Похудение</label>
+                  </li>
+
+                  <li class="form__select-programm-list-item">
+                    <input id="categorie-2" class="visually-hidden" type=radio value="Набор массы" name="categorie">
+                    <label for="categorie-2" class="form__radio-label">Набор массы</label>
+                  </li>
+
+                  <li class="form__select-programm-list-item">
+                    <input id="categorie-3" class="visually-hidden" type=radio value="Не знаю (Нужен ваш совет)" name="categorie">
+                    <label for="categorie-3" class="form__radio-label">Не знаю (Нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
           </div>
-        </fieldset>
+        </div>
 
         <div class="container">
           <fieldset class="form__cat-owner form__fieldset">
@@ -99,14 +111,25 @@
             <div class="form__extra-wrapper">
               <legend class="form__header">Дополнительно</legend>
               <ul class="form__extra-list">
-                <li class="form__extra-list-item"><input id="feature-1" type=checkbox value="сахарозаменитель" checked>
-                  <label for="feature-1" class="form__check-label">сахарозаменитель</label></li>
-                <li class="form__extra-list-item"><input id="feature-2" type=checkbox value="питьевая вода">
-                  <label for="feature-2" class="form__check-label">питьевая вода</label></li>
-                <li class="form__extra-list-item"><input id="feature-3" type=checkbox value="молоко">
-                  <label for="feature-3" class="form__check-label">молоко</label></li>
-                <li class="form__extra-list-item"><input id="feature-4" type=checkbox value="витамины">
-                  <label for="feature-4" class="form__check-label">витамины</label></li>
+                <li class="form__extra-list-item">
+                  <input id="feature-1" type=checkbox value="сахарозаменитель" checked>
+                  <label for="feature-1" class="form__check-label">сахарозаменитель</label>
+                </li>
+
+                <li class="form__extra-list-item">
+                  <input id="feature-2" type=checkbox value="питьевая вода">
+                  <label for="feature-2" class="form__check-label">питьевая вода</label>
+                </li>
+
+                <li class="form__extra-list-item">
+                  <input id="feature-3" type=checkbox value="молоко">
+                  <label for="feature-3" class="form__check-label">молоко</label>
+                </li>
+
+                <li class="form__extra-list-item">
+                  <input id="feature-4" type=checkbox value="витамины">
+                  <label for="feature-4" class="form__check-label">витамины</label>
+                </li>
               </ul>
             </div>
           </fieldset>
