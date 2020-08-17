@@ -92,6 +92,7 @@
 
 .form__select-programm-list-item {
   margin-bottom: 13px;
+  height: 40px;
 
   &:last-child {
     margin-bottom: 0;
@@ -127,13 +128,20 @@
   margin-bottom: 0;
 }
 
+.form__send {
+  padding-bottom: 32px;
+}
+
 .form__send-remark {
+  margin: 0;
+  padding-top: 20px;
   text-align: center;
 }
 
 @media (min-width: @tablet) {
   .form__input {
     height: 52px;
+    margin-bottom: 20px;
   }
 
   .form__label,
@@ -182,10 +190,16 @@
 
   .form__send-btn {
     height: 52px;
+    font-size: 20px;
   }
 
   .form__send-remark {
+    padding: 0;
     margin-left: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 }
 
@@ -198,6 +212,10 @@
 
   .form__cat-owner-list-item {
     width: 568px;
+
+    .form__input {
+      margin-bottom: 0;
+    }
   }
 
   .form__extra-list {
