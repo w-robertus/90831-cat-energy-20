@@ -45,8 +45,8 @@
   font: normal 16px/18px @oswald;
   color: @special_dark-grey-2;
 
-  background: url("../img/radiobutton.png") no-repeat left center;
-  padding: 10px;
+  background: url("../img/radiobutton-mobile.png") no-repeat left center;
+  padding: 7px;
   padding-left: 60px;
 
   &:active {
@@ -55,7 +55,7 @@
 }
 
 input[type="radio"]:checked + label.form__radio-label {
-  background-image: url("../img/radiobutton-active.png");
+  background-image: url("../img/radiobutton-active-mobile.png");
 }
 
 .form__input {
@@ -89,13 +89,15 @@ input[type="radio"]:checked + label.form__radio-label {
 .form__check-label {
   // justify-content: space-between;
   // display: flex;
-  align-items: baseline;
+  // align-items: baseline;
+  display: block;
+
   text-transform: uppercase;
   font: normal 16px/18px @oswald;
   color: @special_dark-grey;
 
-  background: url("../img/checkbox.png") no-repeat left center;
-  padding: 10px;
+  background: url("../img/checkbox-mobile.png") no-repeat left center;
+  padding: 7px;
   padding-left: 60px;
 
   &:active {
@@ -104,7 +106,7 @@ input[type="radio"]:checked + label.form__radio-label {
 }
 
 input[type="checkbox"]:checked + label.form__check-label {
-  background-image: url("../img/checkbox-checked.png");
+  background-image: url("../img/checkbox-checked-mobile.png");
 }
 
 .form__cat-info,
@@ -126,7 +128,7 @@ input[type="checkbox"]:checked + label.form__check-label {
 
 .form__select-programm-list-item {
   margin-bottom: 13px;
-  height: 40px;
+  // height: 40px;
 
   &:last-child {
     margin-bottom: 0;
@@ -228,6 +230,14 @@ input[type="checkbox"]:checked + label.form__check-label {
     padding: 25px;
   }
 
+  .form__radio-label {
+    background: url("../img/radiobutton.png") no-repeat left center;
+  }
+
+  input[type="radio"]:checked + label.form__radio-label {
+    background-image: url("../img/radiobutton-active.png");
+  }
+
   .form__header {
     font: normal 36px/36px @oswald;
     padding-top: 65px;
@@ -248,6 +258,14 @@ input[type="checkbox"]:checked + label.form__check-label {
       flex-basis: 50%;
       margin-bottom: 0;
     }
+  }
+
+  .form__check-label {
+    background: url("../img/checkbox.png") no-repeat left center;
+  }
+
+  input[type="checkbox"]:checked + label.form__check-label {
+    background-image: url("../img/checkbox-checked.png");
   }
 
   .form__send {
