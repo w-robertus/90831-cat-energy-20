@@ -85,20 +85,26 @@
 
         <div class="container container--form">
           <fieldset class="form__cat-owner form__fieldset">
-            <legend class="form__header">Контактные данные (владельца кота)</legend>
-            <ul class="form__cat-owner-list">
-              <li class="form__cat-owner-list-item">
-                <label for="client-mail" class="form__label">E-mail:*
+            <legend class="form__header">Контактные данные<br> (владельца кота)</legend>
+            <!-- <ul class="form__cat-owner-list"> -->
+              <!-- <li class="form__cat-owner-list-item"> -->
+              <div class="container-column">
+                <div class="container-column__column">
+                  <label for="client-mail" class="form__label">E-mail:*
                   <input type="text" id="client-mail" class="form__input form__cat-owner-mail-input" name="mail" placeholder="kuklachev@gmail.com">
-                </label>
-              </li>
+                  </label>
+                </div>
+              <!-- </li> -->
 
-              <li class="form__cat-owner-list-item">
-                <label for="client-tel" class="form__label">Телефон:*
-                  <input type="text" id="client-tel" class="form__input form__cat-owner-tel-input" name="tel" placeholder="8 (960) 900-60-90">
-                </label>
-              </li>
-            </ul>
+              <!-- <li class="form__cat-owner-list-item"> -->
+                  <div class="container-column__column">
+                    <label for="client-tel" class="form__label">Телефон:*
+                      <input type="text" id="client-tel" class="form__input form__cat-owner-tel-input" name="tel" placeholder="8 (960) 900-60-90">
+                    </label>
+                  </div>
+              </div>
+              <!-- </li> -->
+            <!-- </ul> -->
           </fieldset>
 
           <fieldset class="form__comment form__fieldset">
@@ -108,8 +114,8 @@
 
 
           <fieldset class="form__extra form__fieldset">
+            <legend class="form__header">Дополнительно</legend>
             <div class="form__extra-wrapper">
-              <legend class="form__header">Дополнительно</legend>
               <ul class="form__extra-list">
                 <li class="form__extra-list-item">
                   <input id="feature-1" class="visually-hidden" type=checkbox value="сахарозаменитель" checked>

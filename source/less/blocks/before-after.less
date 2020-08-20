@@ -21,6 +21,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 40px;
 }
 
 .before-after__metrica-item {
@@ -68,6 +69,8 @@
 
 .before-after__slider-list {
   list-style: none;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .before-after__toggles-btn {
@@ -81,7 +84,7 @@
 
 @media (min-width: @tablet) {
   .before-after {
-    background: linear-gradient(180deg, transparent 50%, @special_grey 50%);
+    background: linear-gradient(0deg, @basic_grey 50%, transparent 50%);
   }
 
   // .before-after__wrapper {
@@ -94,6 +97,10 @@
 
   .before-after__txt {
     padding-bottom: 54px;
+  }
+
+  .before-after__metrica {
+    padding-bottom: 60px;
   }
 
   .before-after__metrica-item {
@@ -144,7 +151,8 @@
 
 @media (min-width: @desktop) {
   .before-after {
-    background: linear-gradient(180deg, transparent 50%, @special_grey 50%);
+    background: linear-gradient(0deg, @basic_grey 462px, transparent 462px);
+    min-height: 656px;
   }
 
   // .before-after__wrapper {
@@ -152,11 +160,31 @@
   // }
   .before-after__header {
     padding-top: 70px;
-    padding-bottom: 75px;
+    padding-bottom: 145px;
+  }
+
+  .before-after__txt {
+    padding-bottom: 70px;
+    width: 436px;
+  }
+
+  .before-after__top {
+    display: flex;
+  }
+
+  .before-after__metrica {
+    width: 370px;
+    padding-bottom: 0;
+  }
+
+  .before-after__metrica-txt {
+    background: @basic_grey;
   }
 
   .before-after__metrica-price {
     padding: 0;
+    padding-top: 55px;
+    width: 330px;
     justify-content: space-between;
   }
 }
