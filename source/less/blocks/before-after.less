@@ -73,13 +73,65 @@
   padding: 0;
 }
 
+//slider
+
+.before-after__slider {
+  width: 100%;
+  padding-bottom: 25px;
+
+  input {
+    display: none;
+  }
+}
+
+.before-after__slider-slide {
+  display: none;
+  justify-content: center;
+}
+
+.before-after__input:nth-child(1):checked ~ .before-after__slider-list .before-after__slider-slide:nth-child(1) {
+  display: flex;
+}
+
+.before-after__input:nth-child(2):checked ~ .before-after__slider-list .before-after__slider-slide:nth-child(2) {
+  display: flex;
+}
+
+.before-after__toggles {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .before-after__toggles-btn {
-  background: none;
   border: none;
 
   font: normal 16px/20px  @oswald;
   text-transform: uppercase;
   color: black;
+
+  background-repeat: no-repeat;
+
+  &:first-child {
+    padding-right: 60px;
+    background-position: right center;
+    background-image: url("../img/toggle-l-unchecked-mobile.png");
+  }
+
+  &:last-child {
+    padding-left: 60px;
+    background-position: left center;
+    background-image: url("../img/toggle-r-unchecked-mobile.png");
+  }
+}
+
+.before-after__input:nth-child(1):checked ~ .before-after__toggles label[for="btn-1"] {
+  background-image: url("../img/toggle-l-checked-mobile.png");
+}
+
+.before-after__input:nth-child(2):checked ~ .before-after__toggles label[for="btn-2"] {
+  background-image: url("../img/toggle-r-checked-mobile.png");
 }
 
 @media (min-width: @tablet) {
@@ -143,9 +195,33 @@
     text-align: right;
   }
 
+  .before-after__slider {
+    padding-bottom: 65px;
+  }
+
   .before-after__toggles-btn {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 40px;
+
+    &:first-child {
+      padding-right: 237px;
+      background-position: right center;
+      background-image: url("../img/toggle-l-unchecked-tablet.png");
+    }
+
+    &:last-child {
+      padding-left: 237px;
+      background-position: left center;
+      background-image: url("../img/toggle-r-unchecked-tablet.png");
+    }
+  }
+
+  .before-after__input:nth-child(1):checked ~ .before-after__toggles label[for="btn-1"] {
+    background-image: url("../img/toggle-l-checked-tablet.png");
+  }
+
+  .before-after__input:nth-child(2):checked ~ .before-after__toggles label[for="btn-2"] {
+    background-image: url("../img/toggle-r-checked-tablet.png");
   }
 }
 
@@ -186,5 +262,14 @@
     padding-top: 55px;
     width: 330px;
     justify-content: space-between;
+  }
+
+  .before-after__slider {
+    box-sizing: border-box;
+    padding-bottom: 65px;
+    height: 656px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
   }
 }

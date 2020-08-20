@@ -108,21 +108,32 @@
 
           <div class="container-column__column">
             <div class="before-after__slider">
+
+                <input type="radio" class="before-after__input" id="btn-1" name="toggle" checked>
+                <input type="radio" class="before-after__input" id="btn-2" name="toggle">
+
               <ul class="before-after__slider-list">
 
-                <li class="before-after__slider-list-item">
+                <li class="before-after__slider-slide">
                   <img src="img/before-mobile@1x.png" alt="фото кота до">
                 </li>
 
-                <li class="before-after__slider-list-item">
+                <li class="before-after__slider-slide">
                   <img src="img/after-mobile@1x.png" alt="фото кота после">
                 </li>
 
               </ul>
+
+              <div class="before-after__toggles">
+                <label for="btn-1" class="before-after__toggles-btn">Было</label>
+                <label for="btn-2" class="before-after__toggles-btn">Стало</label>
+              </div>
+
+<!--
               <div class="before-after__toggles">
                 <button class="before-after__toggles-btn before-after__toggles-btn--current" type="button">Было</button>
                 <button class="before-after__toggles-btn" type="button">Стало</button>
-              </div>
+              </div> -->
             </div>
         </div>
       </div>
