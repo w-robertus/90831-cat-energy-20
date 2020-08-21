@@ -2,13 +2,13 @@
   padding: 0;
   margin: 0;
 
-  padding-top: 30px;
-  padding-bottom: 25px;
+  padding-top: 28px;
+  padding-bottom: 37px;
 }
 
 .promo__txt {
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
 
   font: normal 14px/18px @oswald;
   text-transform: uppercase;
@@ -27,6 +27,8 @@
   background-size: auto, auto, auto;
 
   .promo__header {
+    padding-top: 28px;
+    padding-bottom: 25px;
     color: white;
   }
 
@@ -48,36 +50,50 @@
 
 @media (min-width: @tablet) {
   .promo__wrapper {
-    padding-bottom: 80px;
+    padding-bottom: 43px;
   }
 
   .promo__txt {
+    margin-top: 15px;
+    padding-bottom: 23px;
     font: normal 20px/30px @oswald;
   }
 
   .promo--index {
-    background: url("../img/index-can-tablet@1x.jpg") 50% 70% no-repeat;
+    background: url("../img/index-can-tablet@1x.jpg") 50% 108% no-repeat;
 
     .promo__wrapper {
-      padding-left: 90px;
-      min-height: 870px;
+      padding-left: 82px;
+      padding-bottom: 0;
+      min-height: 826px;
       text-align: left;
     }
 
     .promo__header {
+      padding-left: 5px;
+      padding-bottom: 44px;
       color: black;
     }
 
     .promo__txt {
+      padding-left: 5px;
       flex-grow: 0;
       margin-bottom: 50px;
       line-height: 20px;
       color: black;
     }
+
+    .promo__link {
+      width: 244px;
+      height: 54px;
+
+      font-size: 20px;
+      line-height: 0px;
+    }
   }
 
   .promo__header {
-    padding-top: 40px;
+    padding-top: 35px;
     padding-bottom: 40px;
   }
 }
@@ -85,19 +101,27 @@
 @media (min-width: @desktop) {
   .promo--index {
     margin-bottom: 85px;
-    min-height: 700px;
-    background: url("../img/index-can-desktop@1x.png") 50% 70% no-repeat,
+    // min-height: 694px;
+    background: url("../img/index-can-desktop@1x.png") 62% 70% no-repeat,
       linear-gradient(270deg, transparent 50%, white 50%),
-      url("../img/index-background-desktop@1x.jpg") 100% 0% no-repeat,
+      url("../img/index-background-desktop@1x.jpg") 95% 0% no-repeat,
       linear-gradient(270deg, #64a83b 50%, transparent 0);
     background-size: auto, auto, contain, auto;
 
     .promo__wrapper {
-      min-height: 700px;
+      min-height: 694px;
+    }
+
+    .promo__header {
+      padding-left: 0;
+    }
+
+    .promo__txt {
+      padding-left: 0;
     }
   }
 
   .promo__header {
-    padding-top: 180px;
+    padding-top: 186px;
   }
 }
