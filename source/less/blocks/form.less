@@ -1,3 +1,7 @@
+.form {
+  overflow: hidden;
+}
+
 .form__cat-info,
 .form__select-programm {
   border-bottom: 1px solid #d9d9d9;
@@ -22,7 +26,7 @@
 
     background: @basic_green;
     height: 2px;
-    width: 100%;
+    width: 200%;
     display: block;
     position: absolute;
     top: 40px;
@@ -201,7 +205,6 @@ input[type="checkbox"]:checked + label.form__check-label {
   }
 }
 
-
 .form__comment-field {
   width: 100%;
   min-height: 150px;
@@ -220,10 +223,6 @@ input[type="checkbox"]:checked + label.form__check-label {
 }
 
 @media (min-width: @tablet) {
-  .form {
-    overflow: hidden;
-  }
-
   .form__input {
     height: 52px;
     margin-bottom: 20px;
@@ -277,7 +276,7 @@ input[type="checkbox"]:checked + label.form__check-label {
     &::after {
       top: 85px;
       left: -50%;
-      width: 200%;
+      // width: 200%;
     }
   }
 
