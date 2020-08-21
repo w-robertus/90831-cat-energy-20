@@ -12,19 +12,23 @@
 
   font: normal 14px/18px @oswald;
   text-transform: uppercase;
+  color: black;
 }
 
 .promo--index {
   padding: 0;
   margin-bottom: 20px;
 
-  color: white;
   text-align: center;
 
   background: url("../img/index-can-mobile@1x.png") 50% 80% no-repeat,
     url("../img/index-background-mobile@1x.jpg") 50% 0% no-repeat,
     linear-gradient(180deg, #64a83b 306px, transparent 0);
   background-size: auto, auto, auto;
+
+  .promo__header {
+    color: white;
+  }
 
   .promo__wrapper {
     min-height: 480px;
@@ -36,6 +40,8 @@
     padding: 0;
     margin: 0;
     flex-grow: 1;
+
+    color: white;
   }
 }
 
@@ -50,7 +56,6 @@
   }
 
   .promo--index {
-    color: black;
     background: url("../img/index-can-tablet@1x.jpg") 50% 70% no-repeat;
 
     .promo__wrapper {
@@ -59,10 +64,15 @@
       text-align: left;
     }
 
+    .promo__header {
+      color: black;
+    }
+
     .promo__txt {
-      line-height: 20px;
       flex-grow: 0;
       margin-bottom: 50px;
+      line-height: 20px;
+      color: black;
     }
   }
 
