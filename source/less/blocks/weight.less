@@ -47,7 +47,7 @@
 .weight__link {
   display: inline-block;
   color: black;
-  font: 16px/16px @oswald;
+  font: 20px/30px @oswald;
   text-decoration: none;
   text-transform: uppercase;
   padding-right: 50px;
@@ -55,18 +55,22 @@
   margin-bottom: 20px;
   background: url("../img/icon-right-arrow-long.svg") right center no-repeat;
   background-size: 32px 10px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet) {
   .weight__wrapper {
     padding-left: 50px;
-    padding-right: 315px;
+    padding-right: 280px;
     height: auto;
   }
 
   .weight__wrapper--minus {
     background-image: url("../img/weight__minus-ico-tablet.png");
-    background-position: 95% 50%;
+    background-position: 88% 50%;
     background-repeat: no-repeat;
     margin-bottom: 30px;
 
@@ -79,8 +83,9 @@
   }
 
   .weight__wrapper--plus {
+    padding-right: 314px;
     background-image: url("../img/weight__plus-ico-tablet.png");
-    background-position: 95% 50%;
+    background-position: 94% 52%;
     background-repeat: no-repeat;
 
 
@@ -96,11 +101,13 @@
   .weight__txt {
     border: none;
     padding-bottom: 0;
+    color: black;
   }
 
   .weight__link {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 52px;
+    margin-bottom: 58px;
+    padding-right: 56px;
   }
 }
 

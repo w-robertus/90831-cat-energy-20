@@ -1,42 +1,36 @@
 .addition {
-  position: relative;
+  overflow: hidden;
 }
 
 .addition__header {
+  position: relative;
   font-size: 24px;
   line-height: 24px;
-  padding-top: 28px;
+
   margin: 0;
-  padding-right: 22px;
+  padding-top: 28px;
   padding-bottom: 35px;
-  display: inline-block;
+  padding-right: 15px;
+
+  width: 230px;
+  // display: inline-block;
   background: white;
   // border-bottom: 1px solid @special_grey;
-
-  // &::before {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   z-index: -1;
-  //   // left: 0;
-  //   top: 20px + 20px;
-  //   width: 100%;
-  //   height: 2px;
-  //   background-color: @basic_green;
-  // }
+  &::after {
+    content: "";
+    line-height: 0;
+    vertical-align: middle;
+    background: @basic_green;
+    height: 2px;
+    width: 500%;
+    display: block;
+    position: absolute;
+    top: 43px;
+    left: 0;
+    z-index: -1;
+  }
 }
 
-.addition__gift {
-  margin-bottom: 40px;
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  min-height: 289px;
-  background: url("../img/icon-gift.svg") center 58px no-repeat,
-    url("../img/gift-photo-mobile@1x.jpg") center center no-repeat;
-  background-size: 78px 80px, cover;
-}
 
 .addition__cards {
   list-style: none;
@@ -45,7 +39,7 @@
 }
 
 .addition__card {
-  padding-bottom: 15px;
+  padding-bottom: 17px;
   border-bottom: 1px solid @special_grey;
 
   &:first-child {
@@ -73,19 +67,47 @@
   }
 }
 
+.addition__gift {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  min-height: 283px;
+  background: url("../img/icon-gift.svg") center 65px no-repeat,
+    url("../img/gift-photo-mobile@1x.jpg") center center no-repeat;
+  background-size: 88px 56px, cover;
+}
+
 .addition__gift-txt {
   color: white;
+  text-align: center;
   font-size: 16px;
   line-height: 20px;
-  padding-bottom: 45px;
+
+  padding-bottom: 20px;
 }
 
 @media (min-width: @tablet) {
+  .addition {
+    margin-top: -60px;
+  }
+
   .addition__header {
+    width: 340px;
+
     font-size: 36px;
     line-height: 36px;
+
     padding-top: 68px;
     padding-bottom: 80px;
+    padding-left: 38px;
+    padding-right: 38px;
+
+    &::after {
+      left: -50%;
+      top: 90px;
+    }
   }
 
   .addition__cards {
@@ -98,6 +120,7 @@
     border-bottom: 1px solid @special_grey;
     padding-left: 37px;
     padding-right: 37px;
+    padding-bottom: 28px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -107,13 +130,18 @@
   .addition__card-title {
     font-size: 20px;
     line-height: 20px;
-    padding: 27px 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 
   .addition__card-description {
     font-size: 16px;
     line-height: 20px;
     padding: 0;
+  }
+
+  .addition__card-txt {
+    padding-right: 40px;
   }
 
   .addition__card-btn {
@@ -132,7 +160,9 @@
 
   .addition__gift-txt {
     padding: 0;
-    padding-left: 150px;
+    padding-left: 300px;
+
+    text-align: left;
   }
 }
 
@@ -146,12 +176,18 @@
   }
 
   .addition__header {
-    width: 100%;
+    margin-left: -38px;
+    padding-left: 38px;
+    padding-top: 77px;
+
+    &::after {
+      top: 99px;
+    }
   }
 
   .addition__cards {
     border: none;
-    width: 900px;
+    width: 895px;
   }
 
   .addition__card {
@@ -163,12 +199,17 @@
 
   .addition__card-title {
     flex-grow: 1;
+    line-height: 21px;
   }
 
   .addition__card-description {
-    width: 290px;
+    width: 285px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .addition__card-txt {
+    padding-right: 0;
   }
 
   .addition__card-btn {
@@ -184,11 +225,12 @@
     justify-content: flex-start;
     background: url("../img/icon-gift.svg") center 60px no-repeat,
       url("../img/gift-photo-desktop@1x.jpg") center center no-repeat;
-    background-size: 80px 82px, cover;
+    background-size: 60px 66px, cover;
   }
 
   .addition__gift-txt {
     padding: 0;
-    padding-bottom: 40px;
+    padding-bottom: 28px;
+    text-align: center;
   }
 }

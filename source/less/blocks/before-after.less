@@ -15,17 +15,19 @@
 .before-after__txt {
   margin: 0;
   padding-bottom: 25px;
+  width: 278px;
 }
 
 .before-after__metrica {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 35px;
 }
 
 .before-after__metrica-item {
-  height: 64px;
-  width: 124px;
+  height: 55px;
+  width: 122px;
 
   display: flex;
   align-items: center;
@@ -55,6 +57,7 @@
 .before-after__metrica-digit {
   font: 24px/24px @oswald;
   text-transform: uppercase;
+  color: black;
 }
 
 .before-after__metrica-price {
@@ -64,24 +67,80 @@
   font: 14px/20px @oswald;
   text-transform: uppercase;
   text-align: center;
+  color: black;
 }
 
 .before-after__slider-list {
   list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+//slider
+
+.before-after__slider {
+  width: 100%;
+  padding-bottom: 25px;
+
+  input {
+    display: none;
+  }
+}
+
+.before-after__slider-slide {
+  display: none;
+  justify-content: center;
+}
+
+.before-after__input:nth-child(1):checked ~ .before-after__slider-list .before-after__slider-slide:nth-child(1) {
+  display: flex;
+}
+
+.before-after__input:nth-child(2):checked ~ .before-after__slider-list .before-after__slider-slide:nth-child(2) {
+  display: flex;
+}
+
+.before-after__toggles {
+  height: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .before-after__toggles-btn {
-  background: none;
   border: none;
 
   font: normal 16px/20px  @oswald;
   text-transform: uppercase;
   color: black;
+
+  background-repeat: no-repeat;
+
+  &:first-child {
+    padding-right: 60px;
+    background-position: right center;
+    background-image: url("../img/toggle-l-unchecked-mobile.png");
+  }
+
+  &:last-child {
+    padding-left: 60px;
+    background-position: left center;
+    background-image: url("../img/toggle-r-unchecked-mobile.png");
+  }
+}
+
+.before-after__input:nth-child(1):checked ~ .before-after__toggles label[for="btn-1"] {
+  background-image: url("../img/toggle-l-checked-mobile.png");
+}
+
+.before-after__input:nth-child(2):checked ~ .before-after__toggles label[for="btn-2"] {
+  background-image: url("../img/toggle-r-checked-mobile.png");
 }
 
 @media (min-width: @tablet) {
   .before-after {
-    background: linear-gradient(180deg, transparent 50%, @special_grey 50%);
+    background: linear-gradient(0deg, @basic_grey 50%, transparent 50%);
   }
 
   // .before-after__wrapper {
@@ -90,15 +149,23 @@
   .before-after__header {
     padding-top: 43px;
     padding-bottom: 63px;
+
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .before-after__txt {
     padding-bottom: 54px;
+    width: auto;
+  }
+
+  .before-after__metrica {
+    padding-bottom: 60px;
   }
 
   .before-after__metrica-item {
-    width: 162px;
-    height: 77px;
+    width: 160px;
+    height: 69px;
 
     font-size: 30px;
     line-height: 37px;
@@ -123,28 +190,55 @@
 
   .before-after__metrica-price {
     width: 300px;
+    height: 72px;
     padding-top: 0;
     padding-left: 110px;
     box-sizing: border-box;
 
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
 
     font-size: 20px;
     line-height: 20px;
     text-align: right;
   }
 
+  .before-after__slider {
+    padding-bottom: 65px;
+  }
+
   .before-after__toggles-btn {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 40px;
+
+    &:first-child {
+      padding-right: 237px;
+      background-position: right center;
+      background-image: url("../img/toggle-l-unchecked-tablet.png");
+    }
+
+    &:last-child {
+      padding-left: 237px;
+      background-position: left center;
+      background-image: url("../img/toggle-r-unchecked-tablet.png");
+    }
+  }
+
+  .before-after__input:nth-child(1):checked ~ .before-after__toggles label[for="btn-1"] {
+    background-image: url("../img/toggle-l-checked-tablet.png");
+  }
+
+  .before-after__input:nth-child(2):checked ~ .before-after__toggles label[for="btn-2"] {
+    background-image: url("../img/toggle-r-checked-tablet.png");
   }
 }
 
 @media (min-width: @desktop) {
   .before-after {
-    background: linear-gradient(180deg, transparent 50%, @special_grey 50%);
+    background: linear-gradient(0deg, @basic_grey 462px, transparent 462px);
+    min-height: 656px;
   }
 
   // .before-after__wrapper {
@@ -152,11 +246,42 @@
   // }
   .before-after__header {
     padding-top: 70px;
-    padding-bottom: 75px;
+    padding-bottom: 145px;
+  }
+
+  .before-after__txt {
+    padding-bottom: 70px;
+    width: 436px;
+  }
+
+  .before-after__top {
+    display: flex;
+  }
+
+  .before-after__metrica {
+    width: 370px;
+    padding-bottom: 0;
+  }
+
+  .before-after__metrica-txt {
+    background: @basic_grey;
   }
 
   .before-after__metrica-price {
     padding: 0;
+    padding-top: 62px;
+    width: 330px;
+    height: auto;
+    flex-direction: row;
     justify-content: space-between;
+  }
+
+  .before-after__slider {
+    box-sizing: border-box;
+    padding-bottom: 65px;
+    height: 668px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
   }
 }

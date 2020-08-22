@@ -10,7 +10,7 @@
   // padding-top: 25px;
   padding-bottom: 25px;
   width: 320px;
-  min-height: 210px;
+  height: 209px;
   box-sizing: border-box;
   // min-height: 210px - 30px - 25px;
   border-bottom: 1px solid @basic_grey-2;
@@ -35,7 +35,7 @@
 .card__name {
   display: block;
   width: 80px;
-  padding-bottom: 18px;
+  padding-bottom: 14px;
   text-decoration: none;
   text-transform: uppercase;
   color: #222222;
@@ -46,6 +46,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-bottom: 12px;
   width: 140px;
 }
 
@@ -56,7 +57,7 @@
 }
 
 .card__btn {
-  margin-top: 20px;
+  margin-top: 8px;
   font-size: 16px;
 }
 
@@ -70,7 +71,9 @@
 
   .card__name {
     width: auto;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
+    text-align: center;
+    color: #111111;
 
     &::before {
       content: " ";
@@ -80,7 +83,7 @@
       margin: 0 auto;
       margin-bottom: 23px;
 
-      background-image: url("../../img/icon-plus-mobile.svg");
+      background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 30 30' style='enable-background:new 0 0 30 30;' xml:space='preserve' fill='%23d3d3d3'%3E%3Cpolygon class='st0' points='30,14 16,14 16,0 14,0 14,14 0,14 0,16 14,16 14,30 16,30 16,16 30,16 '/%3E%3C/svg%3E%0A");
       background-size: cover;
       background-position: center center;
     }
@@ -139,20 +142,25 @@
 
   .card__description {
     width: 248px;
+    padding-bottom: 0;
   }
 
   .card__description-item {
     border-bottom: 1px solid @special_grey;
-    font: normal 16px/32px @arial;
+    font: normal 16px/31px @arial;
     text-align: center;
   }
 
   .card__btn {
-    margin-top: 33px;
+    margin-top: 32px;
     width: 248px;
   }
 
   .card--more {
+    padding: 36px;
+    margin-top: 80px;
+    height: 430px;
+
     background: none;
     border: 2px solid @basic_grey;
     // box-sizing: border-box;
@@ -160,11 +168,13 @@
     // width: 324px - 40px*2 - 2px*2;
 
     .card__name {
+      padding-bottom: 23px;
       width: 135px;
 
       &::before {
         width: 60px;
         height: 60px;
+        margin-bottom: 46px;
       }
     }
 
@@ -200,6 +210,7 @@
   .card__name {
     font-size: 20px;
     line-height: 21px;
+    padding-bottom: 18px;
   }
 
   .card__description {
