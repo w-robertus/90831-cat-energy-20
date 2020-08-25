@@ -283,10 +283,18 @@ input[type="checkbox"]:checked + label.form__check-label {
     padding-bottom: 5px;
     padding-left: 63px;
     background: url("../img/radiobutton.png") no-repeat left center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/radiobutton2x.png");
+    }
   }
 
   input[type="radio"]:checked + label.form__radio-label {
     background-image: url("../img/radiobutton-active.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/radiobutton-active2x.png");
+    }
   }
 
   .form__header {
@@ -364,10 +372,18 @@ input[type="checkbox"]:checked + label.form__check-label {
   .form__check-label {
     padding-left: 60px;
     background: url("../img/checkbox.png") no-repeat left center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/checkbox2x.png");
+    }
   }
 
   input[type="checkbox"]:checked + label.form__check-label {
     background-image: url("../img/checkbox-checked.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/checkbox-checked2x.png");
+    }
   }
 
   .form__send {
