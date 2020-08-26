@@ -1,9 +1,13 @@
+.promo {
+  border-top: 1px solid @basic_grey-2;
+}
+
 .promo__header {
   padding: 0;
   margin: 0;
 
   padding-top: 28px;
-  padding-bottom: 37px;
+  padding-bottom: 39px;
 }
 
 .promo__txt {
@@ -17,9 +21,11 @@
 
 .promo--index {
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   text-align: center;
+
+  border-top: none;
 
   background: url("../img/index-can-mobile@1x.png") 50% 80% no-repeat,
     url("../img/index-background-mobile@1x.jpg") 50% 0% no-repeat,
@@ -56,6 +62,10 @@
 
 
 @media (min-width: @tablet) {
+  .promo {
+    border-top: none;
+  }
+
   .promo__wrapper {
     padding-bottom: 43px;
   }
@@ -74,6 +84,7 @@
   .promo--index {
     background: url("../img/index-can-tablet@1x.jpg") 50% 108% no-repeat;
     background-size: 709px 609px;
+    margin-bottom: 19px;
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url("../img/index-can-tablet@2x.jpg");
