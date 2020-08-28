@@ -66,11 +66,20 @@
 
 .main-nav__list-item {
   display: flex;
-  border-bottom: 1px solid #e6e6e6;
-
-  &:first-child {
-    border-top: 1px solid #e6e6e6;
+  position: relative;
+  // border-bottom: 1px solid #e6e6e6;
+  &::before {
+    content: "";
+    height: 1px;
+    width: 500%;
+    position: absolute;
+    left: -250%;
+    background-color: #e6e6e6;
   }
+
+  //&:first-child {
+  //border-top: 1px solid #e6e6e6;
+  //}
 
   & a {
     width: 100%;
@@ -106,8 +115,12 @@
     margin-left: 35px;
     border: none;
 
-    &:first-child {
-      border: none;
+    // &:first-child {
+    //   border: none;
+    // }
+
+    &::before {
+      display: none;
     }
 
     a {
