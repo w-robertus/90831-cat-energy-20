@@ -81,11 +81,7 @@ exports.webp = createWebp;
 
 // build
 const build = gulp.series(
-    clean,
-    copy,
-    styles,
-    html,
-    sprite
+  clean, copy, styles, html, sprite
 );
 exports.build = build;
 
@@ -106,8 +102,13 @@ exports.server = server;
 
 // Watcher
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/less/**/*.less", gulp.series("styles"));
+  gulp.watch("source/*.html", gulp.series("html"));
+  gulp.watch("source/img/**", gulp.series("copy"));
+
+  gulp.watch("source/less/**/*.less").on("change", sync.reload);
   gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/img/**").on("all", sync.reload);
 }
 
 exports.default = gulp.series(
