@@ -1,13 +1,18 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
+
 const sourcemap = require("gulp-sourcemaps");
 const less = require("gulp-less");
-const rename = require("gulp-rename");
-const svgstore = require("gulp-svgstore");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
-const htmlmin = require("gulp-htmlmin");
 const csso = require("gulp-csso");
+
+const rename = require("gulp-rename");
+const del = require("del");
+
+const svgstore = require("gulp-svgstore");
+const htmlmin = require("gulp-htmlmin");
+
 const webp = require("gulp-webp");
 const sync = require("browser-sync").create();
 
@@ -40,7 +45,6 @@ const html = () => {
 exports.html = html;
 
 //build folder del
-const del = require("del");
 const clean = () => {
     return del("build");
 }
