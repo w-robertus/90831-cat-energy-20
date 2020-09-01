@@ -48,5 +48,6 @@
     "node": "12.18.2"
   },
   "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
   }
 }

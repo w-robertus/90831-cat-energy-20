@@ -6,6 +6,7 @@ const rename = require("gulp-rename");
 const svgstore = require("gulp-svgstore");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
+const htmlmin = require("gulp-htmlmin");
 const csso = require("gulp-csso");
 const webp = require("gulp-webp");
 const sync = require("browser-sync").create();
@@ -28,6 +29,16 @@ const styles = () => {
 }
 exports.styles = styles;
 
+// html min
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(plumber())
+    .pipe(htmlmin())
+    .pipe(gulp.dest("build/"))
+    .pipe(sync.stream());
+}
+exports.html = html;
+
 //build folder del
 const del = require("del");
 const clean = () => {
@@ -42,8 +53,8 @@ const copy = () => {
         "source/css/*.css",
         "source/img/**",
         "source/js/**",
-        "source/*.ico",
-        "source/*.html"
+        "source/*.ico"
+
     ], {
         base: "source"
     })
@@ -70,10 +81,7 @@ exports.webp = createWebp;
 
 // build
 const build = gulp.series(
-    clean,
-    copy,
-    styles,
-    sprite
+  clean, copy, styles, html, sprite
 );
 exports.build = build;
 
@@ -94,8 +102,13 @@ exports.server = server;
 
 // Watcher
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/less/**/*.less", gulp.series("styles"));
+  gulp.watch("source/*.html", gulp.series("html"));
+  gulp.watch("source/img/**", gulp.series("copy"));
+
+  gulp.watch("source/less/**/*.less").on("change", sync.reload);
   gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/img/**").on("all", sync.reload);
 }
 
 exports.default = gulp.series(
