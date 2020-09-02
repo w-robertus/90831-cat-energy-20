@@ -206,6 +206,23 @@
   .before-after__toggles-btn {
     font-size: 20px;
     line-height: 40px;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 49px;
+      border-bottom: 1px dashed #b8b8b8;
+    }
+
+    &:hover::after {
+      border-bottom: 1px solid #919191;
+    }
+
+    &:active::after {
+      display: none;
+    }
 
     &:first-child {
       padding-right: 473px;
