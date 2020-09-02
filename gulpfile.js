@@ -50,7 +50,6 @@ exports.clean = clean;
 const copy = () => {
     return gulp.src([
         "source/fonts/**/*.{woff,woff2}",
-        "source/css/*.css",
         "source/img/**",
         "source/js/**",
         "source/*.ico"

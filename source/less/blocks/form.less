@@ -18,6 +18,8 @@
   background: white;
   color: black;
 
+  position: relative;
+
   &::after {
     content: "";
     line-height: 0;
@@ -25,7 +27,7 @@
 
     background: @basic_green;
     height: 2px;
-    width: 200%;
+    width: 10000%;
     display: block;
     position: absolute;
     top: 40px;
@@ -289,7 +291,7 @@ input[type="checkbox"]:checked + label.form__check-label {
 
     &::after {
       top: 81px;
-      left: -50%;
+      left: -1000%;
     }
   }
 
