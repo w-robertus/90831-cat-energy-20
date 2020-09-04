@@ -252,46 +252,46 @@
   }
 
   .before-after__scale {
-  width: 472px;
-}
-
-.before-after__scale-bar {
-  width: 428px;
-  height: 6px;
-  border: none;
-  background-color: @special_grey;
-  border-radius: 6px;
-}
-
-.before-after__scale-toggle {
-  border-radius: 50%;
-  width: 34px;
-  height: 34px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -17px;
-  margin-top: -17px;
-
-
-  background-color: white;
-  background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' r='4' fill='%2368B738'/%3E%3C/svg%3E");
-  background-size: 8px 8px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  border: 1px solid @special_grey;
-  box-sizing: border-box;
-  filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
-
-  &:hover {
-    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+    width: 472px;
   }
 
-  &:active {
-    border-color: @basic_green;
-    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+  .before-after__scale-bar {
+    width: 428px;
+    height: 6px;
+    border: none;
+    background-color: @special_grey;
+    border-radius: 6px;
   }
-}
+
+  .before-after__scale-toggle {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -17px;
+    margin-top: -17px;
+
+
+    background-color: white;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' r='4' fill='%2368B738'/%3E%3C/svg%3E");
+    background-size: 8px 8px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid @special_grey;
+    box-sizing: border-box;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active {
+      border-color: @basic_green;
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+    }
+  }
 }
 
 @media (min-width: @desktop) {
