@@ -4,10 +4,10 @@
   }
 }
 
-.weight__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 266px;
+.weight__block {
+  padding: 20px;
+  padding-top: 0;
+
   background-color: @basic_grey;
 }
 
@@ -21,7 +21,7 @@
   line-height: 37px;
 }
 
-.weight__wrapper--minus {
+.weight__block--minus {
   margin-bottom: 20px;
 
   .weight__header {
@@ -31,7 +31,7 @@
   }
 }
 
-.weight__wrapper--plus {
+.weight__block--plus {
   .weight__header {
     background-image: url("../img/weight__plus-ico.svg");
     background-position: 0 50%;
@@ -48,13 +48,14 @@
 
 .weight__link {
   display: inline-block;
+  margin-top: 20px;
+  padding-right: 45px;
+
   color: black;
   font: 16px/20px @oswald;
   text-decoration: none;
   text-transform: uppercase;
-  padding-right: 45px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
   background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24.2 11' style='enable-background:new 0 0 24.2 11;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0 %7B fill: %233F4242; %7D %3C/style%3E%3Cpolygon class='st0' points='17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 '/%3E%3C/svg%3E");
   background-position: right center;
   background-repeat: no-repeat;
@@ -70,13 +71,14 @@
 }
 
 @media (min-width: @tablet) {
-  .weight__wrapper {
+  .weight__block {
     padding-left: 50px;
     padding-right: 280px;
+    padding-bottom: 58px;
     height: auto;
   }
 
-  .weight__wrapper--minus {
+  .weight__block--minus {
     background-image: url("../img/weight__minus-ico.svg");
     background-size: 200px 211px;
     background-position: 88% 50%;
@@ -93,7 +95,7 @@
     }
   }
 
-  .weight__wrapper--plus {
+  .weight__block--plus {
     padding-right: 314px;
     background-image: url("../img/weight__plus-ico.svg");
     background-size: 268px 200px;
@@ -120,19 +122,19 @@
 
   .weight__link {
     margin-top: 52px;
-    margin-bottom: 58px;
     padding-right: 56px;
+
     font-size: 20px;
     line-height: 30px;
   }
 }
 
 @media (min-width: @desktop) {
-  .weight {
+  .weight__wrapper {
     display: flex;
   }
 
-  .weight__wrapper {
+  .weight__block {
     padding-right: 50px;
     box-sizing: border-box;
     width: 570px;
@@ -142,7 +144,7 @@
     margin-top: 25px;
   }
 
-  .weight__wrapper--minus {
+  .weight__block--minus {
     background-image: none;
     margin: 0;
     margin-right: 80px;
@@ -157,7 +159,7 @@
     }
   }
 
-  .weight__wrapper--plus {
+  .weight__block--plus {
     background-image: none;
 
     .weight__header {
