@@ -220,8 +220,7 @@
       </div>
 
       <div class="contacts__location">
-
-        <iframe class="contacts__location-map" src="https://yandex.ru/map-widget/v1/-/CCQtZRAw0D?lang=ru_RU"></iframe>
+        <div id="map" class="contacts__location-map">
       </div>
     </section>
   </main>
@@ -283,6 +282,45 @@
     }
   });
 </script>
+
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+  <script type="text/javascript">
+      ymaps.ready(init);
+      function init() {
+
+
+          if(window.matchMedia('(max-width: 999px)').matches){
+              var myMap = new ymaps.Map("map", {
+                center: [59.938635, 30.323118],
+                zoom: 15,
+                controls: [
+                ]
+              });
+          }
+
+          if(window.matchMedia('(min-width: 1000px)').matches){
+              var myMap = new ymaps.Map("map", {
+                center: [59.938635, 30.316842],
+                zoom: 15,
+                controls: [
+                ]
+              });
+          }
+
+      var placemark = new ymaps.Placemark([59.938635, 30.323118], {
+          hintContent: 'Мы находимся здесь',
+      }, {
+
+          iconLayout: 'default#image',
+          iconImageHref: 'img/bg-map-pin.png',
+          iconImageSize: [124, 106],
+          iconImageOffset: [-52, -106],
+      });
+        myMap.geoObjects.add(placemark);
+      }
+  </script>
 
 </body>
 </html>
